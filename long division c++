@@ -1,0 +1,48 @@
+void q3(){
+    int numerator,denominator;
+    cout << "Enter numerator : " << endl;
+    cin >> numerator;
+    cout << "Enter denominator : " << endl;
+    cin >> denominator;
+    if(denominator==0){
+        cout << "Invalid denominator"<<endl;
+        q3();
+        return;
+    }
+    string snumerator,sdenominator;
+    snumerator=to_string(numerator);
+    sdenominator=to_string(denominator);
+    string temp="";
+    string answer="";
+    int remainder=0;
+    int answerDigit=0;
+    cout<<numerator<<endl;
+    int increment=0;
+    for(int i=0;i<snumerator.length();i++){
+        temp+=snumerator.at(i);
+        remainder=stoi(temp);
+        if(denominator<=remainder){
+            answerDigit=remainder/denominator;
+            answer+=to_string(answerDigit);
+            for(int j=0;j<increment;j++){
+                cout << " ";
+            }
+            cout << remainder<<endl;
+            for(int j=0;j<increment;j++){
+                cout << " ";
+            }
+            cout << answerDigit*denominator<<endl;
+            for(int j=0;j<increment;j++){
+                cout << " ";
+            }
+            increment++;
+            cout << "--"<<endl;
+            remainder=remainder-answerDigit*denominator;
+            temp=to_string(remainder);
+        }
+    }
+    for(int j=0;j<increment-1;j++){
+        cout << " ";
+    }
+    cout << remainder<<endl;
+}
