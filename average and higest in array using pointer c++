@@ -1,0 +1,41 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+
+double average(double* a,const int size)
+{
+double total = 0;
+for (int count =0; count< size; count++){
+    total = total + *(a + count);
+}
+return total/size;
+}
+
+double maximum(double* a,const int size)
+{
+    double highest = 0.0;
+
+   if( size == 0 ){
+
+    cout<< "null"<< endl;
+   }
+for (int count =0; count< size; count++){
+    if(*(a +count )   > highest){
+        highest =*(a + count);
+    }
+}
+return highest;
+}
+
+int main()
+{
+const int size = 5;
+double num_array[] = {2,2,3,4,5};
+double* a = num_array;
+cout << average(a,size);
+cout << endl;
+cout << maximum(a,size);
+cout << endl;
+return 0;
+}
