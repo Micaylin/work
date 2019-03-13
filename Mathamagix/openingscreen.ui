@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OpeningScreen</class>
+ <widget class="QMainWindow" name="OpeningScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1122</width>
+    <height>1022</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OpeningScreen</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="8" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QRadioButton" name="radioButton_6">
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>I am 6 years old</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QRadioButton" name="radioButton_5">
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>I am 5 years old </string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QRadioButton" name="radioButton_9">
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>I am 9 years old</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="maximumSize">
+       <size>
+        <width>813</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 85, 127);
+border: 3px solid black;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Weclome to Mathamagix!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#aaffff;&quot;&gt;Please select your age, then select done when you are ready for the fun to begin!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QRadioButton" name="radioButton_8">
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>I am 8 years old</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;I'm ready&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 85, 127);
+font: 75 12pt &quot;Comic Sans MS&quot;;
+border: 3px solid black;</string>
+      </property>
+      <property name="text">
+       <string>Done</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QRadioButton" name="radioButton_7">
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>I am 7 years old</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QRadioButton" name="radioButton_under5">
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>I am under 5 years old</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="minimumSize">
+       <size>
+        <width>813</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 0, 0);</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="2" alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="label_pic">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
