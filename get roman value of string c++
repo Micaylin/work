@@ -1,0 +1,41 @@
+int RomanValue(string s){
+ if (s.compare("M")==0){
+    return 1000;
+ }
+ if (s.compare("D")==0){
+    return 500;
+ }
+if (s.compare("C")==0){
+    return 100;
+ }
+if (s.compare("L") == 0) {
+    return 50;
+ }
+ if (s.compare("X") == 0) {
+    return 10;
+ }
+ if (s.compare("V") == 0) {
+    return 5;
+ }
+ if (s.compare("I") == 0) {
+    return 1;
+ }
+
+
+}
+int calc(string str) {
+    int total = 0;
+    while (str.length() != 0) {
+        if (str.length() == 1
+                || RomanValue(str.substr(0, 1)) >= RomanValue(str.substr(1, 1))) {
+            total += RomanValue(str.substr(0, 1));
+            str = str.substr(1, str.length() - 1);
+        } else {
+            int difference = RomanValue(str.substr(1, 1))
+                    - RomanValue(str.substr(0, 1));
+            total += difference;
+            str = str.substr(2, str.length() - 1);
+        }
+    }
+    return total;
+}
